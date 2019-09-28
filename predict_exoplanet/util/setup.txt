@@ -1,0 +1,80 @@
+
+#Create project directory structure
+sudo mkdir /data
+#sudo chmod -R 777 /data
+cd data
+mkdir share
+cd share
+mkdir ml
+cd ml
+mkdir capstone
+cd capstone
+mkdir predict_exoplanet
+cd predict_exoplanet
+mkdir web
+#chmod -R 777 /data
+cd /data/share/ml/capstone/
+mv /home/mahendran_mohan/predict_exoplanet.tar.gz .
+gunzip predict_exoplanet.tar.gz
+tar -xvf predict_exoplanet.tar
+cd predict_exoplanet
+ls -lrt
+
+
+#Install docker
+sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+      $(lsb_release -cs) \
+      stable"
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+apt-cache madison docker-ce
+sudo docker run hello-world
+
+
+#Install docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+
+
+#Setup client environment
+#Install python3
+sudo apt install python3
+python3 --version
+#Install pip3
+sudo apt install python3-pip
+which pip3
+which pip
+ls /usr/bin/*pip*
+sudo ln -s /usr/bin/pip3 /usr/bin/pip
+pip --version
+#Install pandas, flask, flask_restful,
+pip install pandas
+pip install flask
+pip install flask_restful
+
+
+#Start up docker service
+sudo service docker stop
+ps axf | grep docker | grep -v grep
+sudo dockerd
+#sudo rm /var/run/docker.pid
+
+
+#Build the exoplanet prediction rest application
+cd /data/share/ml/capstone/predict_exoplanet
+sudo docker images
+sudo docker-compose build
+sudo docker images
+
+#Run the application
+cd /data/share/ml/capstone/predict_exoplanet
+sudo docker-compose up
+
+
+#Perform exoplanet prediction
+python3 test.py
