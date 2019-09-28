@@ -1,0 +1,1172 @@
+Recreating predict_exoplanet_web_1 ... 
+[1A[2KRecreating predict_exoplanet_web_1 ... [32mdone[0m[1BAttaching to predict_exoplanet_web_1
+[36mweb_1  |[0m  * Serving Flask app "app" (lazy loading)
+[36mweb_1  |[0m  * Environment: production
+[36mweb_1  |[0m    WARNING: This is a development server. Do not use it in a production deployment.
+[36mweb_1  |[0m    Use a production WSGI server instead.
+[36mweb_1  |[0m  * Debug mode: on
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   np_resource = np.dtype([("resource", np.ubyte, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   np_resource = np.dtype([("resource", np.ubyte, 1)])
+[36mweb_1  |[0m Using TensorFlow backend.
+[36mweb_1  |[0m  * Running on http://0.0.0.0:5205/ (Press CTRL+C to quit)
+[36mweb_1  |[0m  * Restarting with stat
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   np_resource = np.dtype([("resource", np.ubyte, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+[36mweb_1  |[0m /usr/local/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+[36mweb_1  |[0m   np_resource = np.dtype([("resource", np.ubyte, 1)])
+[36mweb_1  |[0m Using TensorFlow backend.
+[36mweb_1  |[0m  * Debugger is active!
+[36mweb_1  |[0m  * Debugger PIN: 190-886-994
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:25] "[37mGET / HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:25] "[37mGET /hithere HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:25,739] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 07:45:25,739] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:25] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:25,744] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 07:45:25,744] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:25] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:26,312] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:26,419] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:26,419] DEBUG in app: load_model approach2
+[36mweb_1  |[0m 2019-09-28 07:45:27.014451: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+[36mweb_1  |[0m 2019-09-28 07:45:27.234341: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3393220000 Hz
+[36mweb_1  |[0m 2019-09-28 07:45:27.236535: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fd5607ed050 executing computations on platform Host. Devices:
+[36mweb_1  |[0m 2019-09-28 07:45:27.236604: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+[36mweb_1  |[0m 2019-09-28 07:45:27.454918: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+[36mweb_1  |[0m WARNING:tensorflow:From /usr/local/lib/python3.7/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+[36mweb_1  |[0m Instructions for updating:
+[36mweb_1  |[0m Use tf.where in 2.0, which has the same broadcast rule as np.where
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:28,160] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:28,160] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:28,160] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:28,161] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:28,161] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:28,161] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:28,161] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:28,162] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:28,162] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:28,162] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:28,162] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:28,869] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 07:45:28,869] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:28,870] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:28,870] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:28,870] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:28,870] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:28,870] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:28,873] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:28] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:28,886] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:28,888] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:28,889] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:29,918] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:29,918] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:29,918] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:29,919] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:29,919] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:29,919] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:29,919] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:29,919] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:29,919] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:29,920] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:29,920] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:30,117] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 07:45:30,118] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:30,118] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:30,118] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:30,118] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:30,118] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:30,118] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:30,120] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:30] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:30,131] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:30,134] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:30,134] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:31,172] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:31,172] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:31,173] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:31,174] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:31,174] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:31,174] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:31,174] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:31,174] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:31,174] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:31,175] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:31,175] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:31,383] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 07:45:31,383] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:31,383] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:31,384] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:31,384] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:31,384] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:31,384] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:31,386] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:31] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:31,400] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:31,402] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:31,402] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:32,500] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:32,500] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:32,500] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:32,501] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:32,501] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:32,502] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:32,502] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:32,502] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:32,502] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:32,502] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:32,502] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:32,697] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 07:45:32,697] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:32,697] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:32,697] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:32,697] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:32,698] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:32,698] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:32,700] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:32] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:32,716] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:32,718] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:32,719] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:33,778] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:33,778] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:33,778] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:33,779] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:33,779] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:33,780] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:33,780] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:33,780] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:33,780] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:33,780] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:33,780] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:33,972] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 07:45:33,973] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:33,973] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:33,973] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:33,973] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:33,973] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:33,973] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:33,974] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:33] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:33,988] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:33,991] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:33,991] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:35,086] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:35,086] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:35,086] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:35,087] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:35,087] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:35,087] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:35,087] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:35,087] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:35,087] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:35,088] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:35,088] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:35,299] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 07:45:35,300] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:35,300] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:35,300] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:35,300] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:35,300] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:35,300] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:35,302] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:35] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:35,316] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:35,318] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:35,319] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:36,476] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:36,476] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:36,476] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:36,477] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:36,477] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:36,478] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:36,478] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:36,478] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:36,478] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:36,478] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:36,478] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:36,688] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 07:45:36,688] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:36,688] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:36,688] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:36,688] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:36,688] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:36,689] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:36,690] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:36] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:36,705] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:36,707] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:36,707] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:37,786] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:37,786] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:37,787] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:37,788] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:37,788] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:37,788] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:37,788] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:37,788] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:37,788] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:37,789] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:37,789] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:37,983] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 07:45:37,983] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:37,983] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:37,983] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:37,983] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:37,984] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:37,984] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:37,985] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:37] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:38,000] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:38,003] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:38,003] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:39,076] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:39,076] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:39,076] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:39,077] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:39,077] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:39,077] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:39,077] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:39,077] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:39,077] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:39,077] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:39,077] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:39,273] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 07:45:39,274] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:39,274] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:39,274] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:39,274] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:39,274] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:39,274] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:39,276] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:39] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:39,287] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:39,289] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:39,289] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:40,336] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:40,337] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:40,337] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:40,338] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:40,338] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:40,338] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:40,338] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:40,338] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:40,338] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:40,338] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:40,338] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:40,542] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 07:45:40,543] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:40,543] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:40,543] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:40,543] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:40,543] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:40,543] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:40,545] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:40] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 07:45:40,560] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 07:45:40,562] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 07:45:40,562] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 07:45:41,675] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 07:45:41,675] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 07:45:41,675] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 07:45:41,676] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:41,676] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 07:45:41,676] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:41,676] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 07:45:41,676] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 07:45:41,676] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 07:45:41,676] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 07:45:41,676] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 07:45:41,876] DEBUG in app: [[1]]
+[36mweb_1  |[0m [2019-09-28 07:45:41,876] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 07:45:41,876] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 07:45:41,876] INFO in app: {'Prediction': 1, 'Actual': 1, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:41,876] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 07:45:41,876] INFO in app: {'Prediction': 1, 'Actual': 1, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 07:45:41,877] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 07:45:41,878] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 07:45:41] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 08:27:27] "[37mGET / HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 08:27:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 08:28:21] "[37mGET /hithere HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 08:33:58,535] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 08:33:58,535] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 08:33:58] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:45:34] "[37mGET / HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:45:55] "[37mGET / HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:46:12] "[37mGET /hithere HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:46:47,192] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 10:46:47,192] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:46:47] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:47:08,425] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 10:47:08,425] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:47:08] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:05] "[37mGET / HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:05] "[37mGET /hithere HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:05,185] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 10:58:05,186] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:05] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:05,191] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 10:58:05,191] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:05] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:05,690] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:05,695] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:05,695] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:07,268] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:07,268] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:07,268] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:07,269] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:07,269] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:07,270] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:07,270] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:07,270] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:07,270] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:07,271] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:07,271] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:07,481] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:07,481] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:07,481] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:07,481] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:07,481] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:07,481] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:07,481] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:07,483] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:07] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:07,498] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:07,501] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:07,501] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:08,468] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:08,468] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:08,468] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:08,469] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:08,469] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:08,469] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:08,469] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:08,469] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:08,469] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:08,470] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:08,470] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:08,818] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:08,818] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:08,819] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:08,819] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:08,819] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:08,819] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:08,819] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:08,820] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:08] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:08,834] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:08,837] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:08,837] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:09,764] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:09,764] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:09,764] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:09,765] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:09,765] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:09,766] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:09,766] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:09,766] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:09,766] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:09,766] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:09,766] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:09,963] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:09,963] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:09,963] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:09,963] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:09,963] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:09,963] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:09,963] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:09,964] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:09] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:09,979] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:09,982] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:09,982] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:11,089] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:11,089] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:11,090] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:11,091] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:11,091] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:11,091] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:11,091] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:11,092] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:11,092] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:11,092] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:11,092] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:11,286] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:11,287] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:11,287] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:11,287] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:11,287] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:11,287] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:11,287] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:11,289] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:11] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:11,303] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:11,306] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:11,306] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:12,434] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:12,434] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:12,434] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:12,435] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:12,435] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:12,436] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:12,436] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:12,436] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:12,436] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:12,436] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:12,436] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:12,640] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:12,640] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:12,641] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:12,641] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:12,641] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:12,641] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:12,641] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:12,642] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:12] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:12,656] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:12,659] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:12,659] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:13,792] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:13,793] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:13,793] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:13,794] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:13,794] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:13,794] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:13,794] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:13,794] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:13,794] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:13,794] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:13,795] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:14,006] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:14,007] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:14,007] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:14,007] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:14,007] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:14,007] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:14,007] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:14,009] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:14] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:14,022] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:14,024] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:14,025] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:15,088] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:15,088] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:15,088] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:15,089] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:15,089] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:15,089] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:15,089] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:15,090] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:15,090] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:15,090] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:15,090] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:15,284] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:15,284] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:15,284] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:15,284] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:15,284] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:15,284] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:15,284] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:15,286] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:15] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:15,297] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:15,300] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:15,300] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:16,446] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:16,446] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:16,446] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:16,447] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:16,447] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:16,447] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:16,447] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:16,448] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:16,448] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:16,448] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:16,448] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:16,659] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:16,660] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:16,660] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:16,660] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:16,660] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:16,660] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:16,660] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:16,661] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:16] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:16,676] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:16,679] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:16,679] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:17,742] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:17,742] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:17,742] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:17,743] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:17,743] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:17,743] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:17,743] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:17,743] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:17,743] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:17,744] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:17,744] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:17,942] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:17,942] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:17,943] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:17,943] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:17,943] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:17,943] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:17,943] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:17,944] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:17] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:17,960] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:17,962] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:17,963] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:19,140] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:19,141] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:19,141] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:19,142] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:19,142] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:19,142] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:19,142] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:19,142] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:19,142] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:19,142] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:19,142] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:19,341] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:19,342] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:19,342] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:19,342] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:19,342] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:19,342] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:19,342] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:19,343] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:19] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:19,358] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:19,360] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:19,361] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:20,507] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:20,507] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:20,507] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:20,508] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:20,509] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:20,509] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:20,509] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:20,509] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:20,509] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:20,509] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:20,509] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:20,722] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:20,722] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:20,722] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:20,722] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:20,722] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:20,722] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:20,723] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:20,724] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:20] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:32] "[37mGET / HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:32] "[37mGET /hithere HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:32,664] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 10:58:32,665] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:32] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:32,669] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 10:58:32,669] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:32] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:33,179] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:33,182] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:33,182] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:34,367] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:34,367] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:34,367] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:34,368] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:34,368] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:34,369] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:34,369] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:34,369] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:34,369] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:34,369] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:34,369] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:34,574] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:34,574] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:34,574] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:34,574] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:34,574] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:34,574] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:34,575] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:34,576] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:34] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:34,591] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:34,593] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:34,594] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:35,671] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:35,671] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:35,671] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:35,672] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:35,672] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:35,673] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:35,673] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:35,673] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:35,673] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:35,673] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:35,673] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:35,867] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:35,867] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:35,868] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:35,868] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:35,868] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:35,868] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:35,868] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:35,869] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:35] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:35,879] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:35,882] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:35,882] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:37,024] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:37,025] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:37,025] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:37,026] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:37,026] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:37,026] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:37,026] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:37,026] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:37,026] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:37,027] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:37,027] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:37,243] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:37,243] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:37,243] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:37,244] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:37,244] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:37,244] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:37,244] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:37,245] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:37] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:37,260] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:37,262] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:37,263] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:38,430] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:38,430] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:38,430] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:38,431] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:38,431] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:38,431] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:38,431] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:38,431] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:38,431] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:38,432] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:38,432] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:38,647] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:38,647] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:38,647] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:38,647] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:38,647] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:38,647] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:38,647] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:38,649] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:38] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:38,664] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:38,667] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:38,667] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:39,747] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:39,747] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:39,747] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:39,748] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:39,748] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:39,748] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:39,748] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:39,748] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:39,749] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:39,749] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:39,749] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:39,948] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:39,948] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:39,948] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:39,948] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:39,948] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:39,948] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:39,948] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:39,950] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:39] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:39,963] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:39,966] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:39,966] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:40,924] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:40,924] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:40,924] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:40,925] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:40,925] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:40,925] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:40,925] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:40,925] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:40,925] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:40,925] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:40,925] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:41,198] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:41,198] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:41,198] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:41,198] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:41,198] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:41,198] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:41,199] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:41,200] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:41] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:41,215] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:41,218] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:41,218] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:42,405] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:42,405] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:42,405] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:42,406] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:42,406] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:42,407] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:42,407] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:42,407] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:42,407] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:42,407] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:42,407] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:42,603] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:42,603] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:42,603] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:42,603] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:42,603] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:42,603] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:42,603] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:42,605] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:42] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:42,616] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:42,618] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:42,619] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:43,793] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:43,793] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:43,793] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:43,794] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:43,794] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:43,795] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:43,795] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:43,795] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:43,795] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:43,795] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:43,795] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:43,993] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:43,993] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:43,993] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:43,993] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:43,993] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:43,993] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:43,993] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:43,995] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:43] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:44,010] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:44,012] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:44,012] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:45,125] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:45,125] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:45,125] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:45,126] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:45,127] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:45,127] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:45,127] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:45,127] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:45,127] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:45,128] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:45,128] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:45,326] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:45,326] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:45,326] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:45,327] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:45,327] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:45,327] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:45,327] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:45,328] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:45] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:45,342] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:45,344] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:45,345] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:46,424] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:46,424] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:46,424] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:46,425] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:46,425] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:46,425] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:46,425] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:46,425] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:46,426] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:46,426] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:46,426] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:46,625] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:46,626] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:46,626] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:46,626] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:46,626] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:46,626] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:46,626] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:46,627] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:46] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:58:46,642] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:58:46,644] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:58:46,644] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:58:47,712] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:58:47,712] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:58:47,712] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:58:47,713] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:47,713] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:58:47,714] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:47,714] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:58:47,714] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:58:47,714] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:58:47,714] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:58:47,714] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:58:47,906] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:58:47,906] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:58:47,906] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:58:47,906] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:47,906] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:58:47,906] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:58:47,907] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:58:47,908] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:58:47] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:04] "[37mGET / HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:04] "[37mGET /hithere HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:04,523] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 10:59:04,523] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:04] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:04,529] INFO in app: add enter
+[36mweb_1  |[0m [2019-09-28 10:59:04,529] INFO in app: add exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:04] "[37mPOST /add HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:05,033] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:05,036] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:05,036] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:06,173] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:06,173] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:06,173] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:06,175] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:06,175] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:06,175] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:06,175] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:06,175] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:06,175] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:06,175] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:06,176] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:06,386] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:59:06,387] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:06,387] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:06,387] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:06,387] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:06,387] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:06,387] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:06,389] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:06] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:06,403] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:06,405] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:06,406] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:07,489] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:07,489] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:07,489] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:07,490] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:07,490] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:07,490] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:07,490] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:07,490] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:07,490] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:07,490] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:07,491] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:07,684] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:59:07,685] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:07,685] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:07,685] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:07,685] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:07,685] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:07,685] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:07,687] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:07] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:07,702] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:07,705] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:07,705] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:08,730] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:08,730] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:08,730] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:08,731] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:08,731] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:08,731] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:08,731] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:08,731] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:08,731] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:08,731] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:08,731] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:08,926] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:59:08,926] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:08,927] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:08,927] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:08,927] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:08,927] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:08,927] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:08,929] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:08] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:08,943] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:08,945] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:08,945] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:10,008] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:10,008] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:10,008] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:10,009] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:10,009] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:10,009] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:10,009] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:10,009] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:10,009] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:10,010] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:10,010] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:10,207] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:59:10,207] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:10,207] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:10,207] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:10,207] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:10,207] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:10,207] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:10,209] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:10] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:10,223] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:10,225] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:10,225] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:11,307] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:11,307] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:11,307] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:11,308] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:11,308] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:11,308] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:11,309] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:11,309] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:11,309] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:11,309] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:11,309] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:11,512] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:59:11,512] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:11,512] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:11,512] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:11,512] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:11,512] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:11,513] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:11,514] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:11] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:11,529] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:11,532] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:11,532] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:12,590] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:12,590] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:12,590] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:12,591] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:12,591] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:12,591] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:12,591] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:12,591] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:12,591] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:12,592] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:12,592] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:12,787] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:59:12,788] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:12,788] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:12,788] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:12,788] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:12,788] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:12,788] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:12,789] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:12] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:12,805] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:12,807] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:12,807] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:13,869] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:13,869] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:13,869] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:13,870] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:13,870] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:13,871] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:13,871] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:13,871] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:13,871] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:13,871] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:13,871] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:14,074] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:59:14,075] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:14,075] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:14,075] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:14,075] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:14,075] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:14,075] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:14,076] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:14] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:14,090] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:14,092] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:14,092] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:15,171] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:15,171] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:15,171] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:15,172] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:15,172] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:15,172] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:15,172] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:15,172] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:15,172] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:15,173] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:15,173] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:15,373] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:59:15,373] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:15,373] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:15,373] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:15,373] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:15,373] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:15,373] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:15,375] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:15] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:15,388] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:15,390] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:15,390] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:16,470] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:16,470] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:16,471] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:16,472] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:16,472] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:16,472] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:16,472] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:16,472] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:16,472] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:16,472] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:16,472] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:16,692] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:59:16,692] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:16,692] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:16,692] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:16,692] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:16,692] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:16,692] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:16,694] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:16] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:16,707] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:16,709] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:16,710] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:17,717] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:17,717] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:17,717] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:17,718] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:17,718] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:17,718] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:17,719] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:17,719] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:17,719] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:17,719] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:17,719] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:17,919] DEBUG in app: [[0]]
+[36mweb_1  |[0m [2019-09-28 10:59:17,919] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:17,919] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:17,919] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:17,919] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:17,919] INFO in app: {'Prediction': 0, 'Actual': 0, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:17,919] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:17,921] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:17] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
+[36mweb_1  |[0m [2019-09-28 10:59:17,934] INFO in app: exoplanet_predict enter
+[36mweb_1  |[0m [2019-09-28 10:59:17,936] DEBUG in app: load_model enter
+[36mweb_1  |[0m [2019-09-28 10:59:17,936] DEBUG in app: load_model approach2
+[36mweb_1  |[0m WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+[36mweb_1  |[0m [2019-09-28 10:59:19,110] DEBUG in app: load_model exit
+[36mweb_1  |[0m [2019-09-28 10:59:19,111] DEBUG in app: preprocess_data enter
+[36mweb_1  |[0m [2019-09-28 10:59:19,111] DEBUG in app: utf-8
+[36mweb_1  |[0m [2019-09-28 10:59:19,111] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:19,111] INFO in app: <class 'list'>
+[36mweb_1  |[0m [2019-09-28 10:59:19,111] INFO in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:19,112] INFO in app: (3198,)
+[36mweb_1  |[0m [2019-09-28 10:59:19,112] INFO in app: 3198
+[36mweb_1  |[0m [2019-09-28 10:59:19,112] INFO in app: (1, 3198)
+[36mweb_1  |[0m [2019-09-28 10:59:19,112] INFO in app: (1, 3197, 2)
+[36mweb_1  |[0m [2019-09-28 10:59:19,112] DEBUG in app: preprocess_data exit
+[36mweb_1  |[0m [2019-09-28 10:59:19,311] DEBUG in app: [[1]]
+[36mweb_1  |[0m [2019-09-28 10:59:19,311] DEBUG in app: <class 'numpy.ndarray'>
+[36mweb_1  |[0m [2019-09-28 10:59:19,311] DEBUG in app: (1, 1)
+[36mweb_1  |[0m [2019-09-28 10:59:19,311] INFO in app: {'Prediction': 1, 'Actual': 1, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:19,311] INFO in app: <class 'dict'>
+[36mweb_1  |[0m [2019-09-28 10:59:19,311] INFO in app: {'Prediction': 1, 'Actual': 1, 'Status Code': 200, 'Message': 'Model prediction correct'}
+[36mweb_1  |[0m [2019-09-28 10:59:19,312] INFO in app: <class 'str'>
+[36mweb_1  |[0m [2019-09-28 10:59:19,313] INFO in app: exoplanet_predict exit
+[36mweb_1  |[0m 172.18.0.1 - - [28/Sep/2019 10:59:19] "[37mPOST /exoplanet_predict HTTP/1.1[0m" 200 -
