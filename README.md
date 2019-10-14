@@ -33,7 +33,7 @@ python3 test.py
  - When compared to Machine Learning model vs Deep learning CNN 1D model, CNN 1D model performed well based on accuracy score and in specific CNN 1D with ADAM optimizer gives prominent solution for this Exoplanet datasets
  - So Final model, Mostly works well on Deep Learning CNN 1D with Adam optimizer, In Machine learning models also works fine such as SGD classifier, Gaussian Naive Bayes Macine Learning models provide high accuracy values
  
-<table style="width:50%" border='1'>
+<table style="width:100%" border='1'>
 <tr>
 <th>Model Name</th>
 <th>Accuray Score (in %)</th>
