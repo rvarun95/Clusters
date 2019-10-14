@@ -22,6 +22,10 @@ python3 test.py
 
 ```
 
+
+![ref]
+
+[ref]: https://github.com/rvarun95/Clusters/blob/master/project_structure.png
 	
 ## Contributors
 
