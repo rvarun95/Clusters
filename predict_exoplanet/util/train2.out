@@ -1,0 +1,444 @@
+Using TensorFlow backend.
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/utils/validation.py:724: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+WARNING:tensorflow:From /conda/envs/rapids/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /conda/envs/rapids/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /conda/envs/rapids/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-10-03 22:17:20.445638: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-10-03 22:17:20.473287: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3393225000 Hz
+2019-10-03 22:17:20.475072: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55d2b46522d0 executing computations on platform Host. Devices:
+2019-10-03 22:17:20.475145: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-03 22:17:20.508563: E tensorflow/stream_executor/cuda/cuda_driver.cc:300] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2019-10-03 22:17:20.508629: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:161] retrieving CUDA diagnostic information for host: 813b5ad736b7
+2019-10-03 22:17:20.508646: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:168] hostname: 813b5ad736b7
+2019-10-03 22:17:20.508750: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:192] libcuda reported version is: 418.67.0
+2019-10-03 22:17:20.508784: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:196] kernel reported version is: 418.67.0
+2019-10-03 22:17:20.508801: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:303] kernel version seems to match DSO: 418.67.0
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:   55.6s remaining:    0.0s
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed:  1.9min remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   3 out of   3 | elapsed:  2.5min remaining:    0.0s
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+[Parallel(n_jobs=1)]: Done   4 out of   4 | elapsed:  3.2min remaining:    0.0s
+WARNING:tensorflow:From /conda/envs/rapids/lib/python3.6/site-packages/tensorflow/python/ops/math_grad.py:102: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+one
+two
+three
+(5087, 3197) (570, 3197)
+(5087, 3197) (570, 3197)
+(5087, 3197) (5087, 1)
+10100
+(10100, 3197) (10100,)
+Fitting 2 folds for each of 40 candidates, totalling 80 fits
+[CV] optimizer=Adadelta, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid 
+[CV]  optimizer=Adadelta, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid, score=0.036, total=  55.6s
+[CV] optimizer=Adadelta, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid 
+[CV]  optimizer=Adadelta, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid, score=0.000, total=  56.4s
+[CV] optimizer=Adam, neurons=32, init_mode=uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=tanh 
+[CV]  optimizer=Adam, neurons=32, init_mode=uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=tanh, score=0.038, total=  39.6s
+[CV] optimizer=Adam, neurons=32, init_mode=uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=tanh 
+[CV]  optimizer=Adam, neurons=32, init_mode=uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=tanh, score=0.000, total=  40.4s
+[CV] optimizer=Adamax, neurons=64, init_mode=lecun_uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=softmax 
+[CV]  optimizer=Adamax, neurons=64, init_mode=lecun_uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=softmax, score=0.015, total= 2.0min
+[CV] optimizer=Adamax, neurons=64, init_mode=lecun_uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=softmax 
+[CV]  optimizer=Adamax, neurons=64, init_mode=lecun_uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=softmax, score=0.000, total= 2.1min
+[CV] optimizer=Adam, neurons=64, init_mode=he_uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=sigmoid 
+[CV]  optimizer=Adam, neurons=64, init_mode=he_uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=sigmoid, score=0.073, total= 1.4min
+[CV] optimizer=Adam, neurons=64, init_mode=he_uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=sigmoid 
+[CV]  optimizer=Adam, neurons=64, init_mode=he_uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=sigmoid, score=0.989, total= 1.4min
+[CV] optimizer=RMSprop, neurons=64, init_mode=he_uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=softsign 
+[CV]  optimizer=RMSprop, neurons=64, init_mode=he_uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=softsign, score=0.050, total= 1.4min
+[CV] optimizer=RMSprop, neurons=64, init_mode=he_uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=softsign 
+[CV]  optimizer=RMSprop, neurons=64, init_mode=he_uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=softsign, score=0.995, total= 1.3min
+[CV] optimizer=Adagrad, neurons=32, init_mode=glorot_uniform, filters=16, dropout_rate=0.2, batch_size=32, activation=softsign 
+[CV]  optimizer=Adagrad, neurons=32, init_mode=glorot_uniform, filters=16, dropout_rate=0.2, batch_size=32, activation=softsign, score=0.041, total= 1.4min
+[CV] optimizer=Adagrad, neurons=32, init_mode=glorot_uniform, filters=16, dropout_rate=0.2, batch_size=32, activation=softsign 
+[CV]  optimizer=Adagrad, neurons=32, init_mode=glorot_uniform, filters=16, dropout_rate=0.2, batch_size=32, activation=softsign, score=0.990, total= 1.4min
+[CV] optimizer=Adagrad, neurons=128, init_mode=zero, filters=16, dropout_rate=0.6, batch_size=32, activation=softmax 
+[CV]  optimizer=Adagrad, neurons=128, init_mode=zero, filters=16, dropout_rate=0.6, batch_size=32, activation=softmax, score=0.015, total= 2.1min
+[CV] optimizer=Adagrad, neurons=128, init_mode=zero, filters=16, dropout_rate=0.6, batch_size=32, activation=softmax 
+[CV]  optimizer=Adagrad, neurons=128, init_mode=zero, filters=16, dropout_rate=0.6, batch_size=32, activation=softmax, score=0.000, total= 2.1min
+[CV] optimizer=Adam, neurons=32, init_mode=he_uniform, filters=8, dropout_rate=0.6, batch_size=64, activation=hard_sigmoid 
+[CV]  optimizer=Adam, neurons=32, init_mode=he_uniform, filters=8, dropout_rate=0.6, batch_size=64, activation=hard_sigmoid, score=0.015, total=  51.1s
+[CV] optimizer=Adam, neurons=32, init_mode=he_uniform, filters=8, dropout_rate=0.6, batch_size=64, activation=hard_sigmoid 
+[CV]  optimizer=Adam, neurons=32, init_mode=he_uniform, filters=8, dropout_rate=0.6, batch_size=64, activation=hard_sigmoid, score=0.000, total=  50.4s
+[CV] optimizer=SGD, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softmax 
+[CV]  optimizer=SGD, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softmax, score=0.015, total= 1.0min
+[CV] optimizer=SGD, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softmax 
+[CV]  optimizer=SGD, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softmax, score=0.000, total= 1.0min
+[CV] optimizer=Adam, neurons=32, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=sigmoid 
+[CV]  optimizer=Adam, neurons=32, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=sigmoid, score=0.015, total=  44.6s
+[CV] optimizer=Adam, neurons=32, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=sigmoid 
+[CV]  optimizer=Adam, neurons=32, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=sigmoid, score=0.000, total=  45.1s
+[CV] optimizer=Nadam, neurons=32, init_mode=uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=relu 
+[CV]  optimizer=Nadam, neurons=32, init_mode=uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=relu, score=0.067, total= 1.4min
+[CV] optimizer=Nadam, neurons=32, init_mode=uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=relu 
+[CV]  optimizer=Nadam, neurons=32, init_mode=uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=relu, score=0.964, total= 1.4min
+[CV] optimizer=SGD, neurons=32, init_mode=zero, filters=16, dropout_rate=0.4, batch_size=32, activation=softplus 
+[CV]  optimizer=SGD, neurons=32, init_mode=zero, filters=16, dropout_rate=0.4, batch_size=32, activation=softplus, score=0.015, total= 1.5min
+[CV] optimizer=SGD, neurons=32, init_mode=zero, filters=16, dropout_rate=0.4, batch_size=32, activation=softplus 
+[CV]  optimizer=SGD, neurons=32, init_mode=zero, filters=16, dropout_rate=0.4, batch_size=32, activation=softplus, score=0.000, total= 1.5min
+[CV] optimizer=Adam, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.6, batch_size=64, activation=sigmoid 
+[CV]  optimizer=Adam, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.6, batch_size=64, activation=sigmoid, score=0.015, total=  45.4s
+[CV] optimizer=Adam, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.6, batch_size=64, activation=sigmoid 
+[CV]  optimizer=Adam, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.6, batch_size=64, activation=sigmoid, score=0.000, total=  46.6s
+[CV] optimizer=Adadelta, neurons=64, init_mode=zero, filters=8, dropout_rate=0.4, batch_size=32, activation=softsign 
+[CV]  optimizer=Adadelta, neurons=64, init_mode=zero, filters=8, dropout_rate=0.4, batch_size=32, activation=softsign, score=0.015, total=  57.1s
+[CV] optimizer=Adadelta, neurons=64, init_mode=zero, filters=8, dropout_rate=0.4, batch_size=32, activation=softsign 
+[CV]  optimizer=Adadelta, neurons=64, init_mode=zero, filters=8, dropout_rate=0.4, batch_size=32, activation=softsign, score=0.000, total=  55.7s
+[CV] optimizer=Adamax, neurons=64, init_mode=normal, filters=16, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid 
+[CV]  optimizer=Adamax, neurons=64, init_mode=normal, filters=16, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid, score=0.015, total= 1.8min
+[CV] optimizer=Adamax, neurons=64, init_mode=normal, filters=16, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid 
+[CV]  optimizer=Adamax, neurons=64, init_mode=normal, filters=16, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid, score=0.000, total= 1.9min
+[CV] optimizer=RMSprop, neurons=32, init_mode=glorot_uniform, filters=8, dropout_rate=0.6, batch_size=32, activation=linear 
+[CV]  optimizer=RMSprop, neurons=32, init_mode=glorot_uniform, filters=8, dropout_rate=0.6, batch_size=32, activation=linear, score=0.049, total=  53.8s
+[CV] optimizer=RMSprop, neurons=32, init_mode=glorot_uniform, filters=8, dropout_rate=0.6, batch_size=32, activation=linear 
+[CV]  optimizer=RMSprop, neurons=32, init_mode=glorot_uniform, filters=8, dropout_rate=0.6, batch_size=32, activation=linear, score=0.984, total= 1.0min
+[CV] optimizer=RMSprop, neurons=64, init_mode=normal, filters=16, dropout_rate=0.6, batch_size=32, activation=sigmoid 
+[CV]  optimizer=RMSprop, neurons=64, init_mode=normal, filters=16, dropout_rate=0.6, batch_size=32, activation=sigmoid, score=0.077, total= 1.6min
+[CV] optimizer=RMSprop, neurons=64, init_mode=normal, filters=16, dropout_rate=0.6, batch_size=32, activation=sigmoid 
+[CV]  optimizer=RMSprop, neurons=64, init_mode=normal, filters=16, dropout_rate=0.6, batch_size=32, activation=sigmoid, score=0.000, total= 1.6min
+[CV] optimizer=Adam, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.2, batch_size=64, activation=hard_sigmoid 
+[CV]  optimizer=Adam, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.2, batch_size=64, activation=hard_sigmoid, score=0.015, total= 1.3min
+[CV] optimizer=Adam, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.2, batch_size=64, activation=hard_sigmoid 
+[CV]  optimizer=Adam, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.2, batch_size=64, activation=hard_sigmoid, score=0.000, total=  58.5s
+[CV] optimizer=Adamax, neurons=32, init_mode=normal, filters=16, dropout_rate=0.2, batch_size=64, activation=softplus 
+[CV]  optimizer=Adamax, neurons=32, init_mode=normal, filters=16, dropout_rate=0.2, batch_size=64, activation=softplus, score=0.074, total= 1.5min
+[CV] optimizer=Adamax, neurons=32, init_mode=normal, filters=16, dropout_rate=0.2, batch_size=64, activation=softplus 
+[CV]  optimizer=Adamax, neurons=32, init_mode=normal, filters=16, dropout_rate=0.2, batch_size=64, activation=softplus, score=0.000, total= 1.9min
+[CV] optimizer=SGD, neurons=64, init_mode=zero, filters=8, dropout_rate=0.2, batch_size=32, activation=relu 
+[CV]  optimizer=SGD, neurons=64, init_mode=zero, filters=8, dropout_rate=0.2, batch_size=32, activation=relu, score=0.015, total=  58.3s
+[CV] optimizer=SGD, neurons=64, init_mode=zero, filters=8, dropout_rate=0.2, batch_size=32, activation=relu 
+[CV]  optimizer=SGD, neurons=64, init_mode=zero, filters=8, dropout_rate=0.2, batch_size=32, activation=relu, score=0.000, total=  58.8s
+[CV] optimizer=SGD, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.2, batch_size=64, activation=softmax 
+[CV]  optimizer=SGD, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.2, batch_size=64, activation=softmax, score=0.015, total= 1.2min
+[CV] optimizer=SGD, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.2, batch_size=64, activation=softmax 
+[CV]  optimizer=SGD, neurons=32, init_mode=glorot_normal, filters=8, dropout_rate=0.2, batch_size=64, activation=softmax, score=0.000, total= 1.2min
+[CV] optimizer=SGD, neurons=64, init_mode=glorot_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softmax 
+[CV]  optimizer=SGD, neurons=64, init_mode=glorot_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softmax, score=0.015, total= 1.2min
+[CV] optimizer=SGD, neurons=64, init_mode=glorot_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softmax 
+[CV]  optimizer=SGD, neurons=64, init_mode=glorot_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softmax, score=0.000, total= 1.2min
+[CV] optimizer=Adagrad, neurons=64, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=64, activation=softsign 
+[CV]  optimizer=Adagrad, neurons=64, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=64, activation=softsign, score=0.041, total= 1.6min
+[CV] optimizer=Adagrad, neurons=64, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=64, activation=softsign 
+[CV]  optimizer=Adagrad, neurons=64, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=64, activation=softsign, score=0.977, total= 1.7min
+[CV] optimizer=RMSprop, neurons=128, init_mode=uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=tanh 
+[CV]  optimizer=RMSprop, neurons=128, init_mode=uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=tanh, score=0.052, total= 1.8min
+[CV] optimizer=RMSprop, neurons=128, init_mode=uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=tanh 
+[CV]  optimizer=RMSprop, neurons=128, init_mode=uniform, filters=16, dropout_rate=0.4, batch_size=32, activation=tanh, score=0.993, total= 1.7min
+[CV] optimizer=SGD, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.2, batch_size=64, activation=relu 
+[CV]  optimizer=SGD, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.2, batch_size=64, activation=relu, score=0.015, total= 1.5min
+[CV] optimizer=SGD, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.2, batch_size=64, activation=relu 
+[CV]  optimizer=SGD, neurons=64, init_mode=lecun_uniform, filters=8, dropout_rate=0.2, batch_size=64, activation=relu, score=0.000, total=  52.8s
+[CV] optimizer=RMSprop, neurons=128, init_mode=glorot_uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=relu 
+[CV]  optimizer=RMSprop, neurons=128, init_mode=glorot_uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=relu, score=0.069, total= 1.6min
+[CV] optimizer=RMSprop, neurons=128, init_mode=glorot_uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=relu 
+[CV]  optimizer=RMSprop, neurons=128, init_mode=glorot_uniform, filters=16, dropout_rate=0.4, batch_size=64, activation=relu, score=0.972, total= 2.9min
+[CV] optimizer=Adadelta, neurons=64, init_mode=glorot_uniform, filters=16, dropout_rate=0.2, batch_size=64, activation=hard_sigmoid 
+[CV]  optimizer=Adadelta, neurons=64, init_mode=glorot_uniform, filters=16, dropout_rate=0.2, batch_size=64, activation=hard_sigmoid, score=0.047, total= 2.4min
+[CV] optimizer=Adadelta, neurons=64, init_mode=glorot_uniform, filters=16, dropout_rate=0.2, batch_size=64, activation=hard_sigmoid 
+[CV]  optimizer=Adadelta, neurons=64, init_mode=glorot_uniform, filters=16, dropout_rate=0.2, batch_size=64, activation=hard_sigmoid, score=0.000, total= 1.9min
+[CV] optimizer=Adadelta, neurons=128, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=32, activation=sigmoid 
+[CV]  optimizer=Adadelta, neurons=128, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=32, activation=sigmoid, score=0.045, total= 2.0min
+[CV] optimizer=Adadelta, neurons=128, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=32, activation=sigmoid 
+[CV]  optimizer=Adadelta, neurons=128, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=32, activation=sigmoid, score=0.000, total= 1.9min
+[CV] optimizer=Adam, neurons=64, init_mode=zero, filters=8, dropout_rate=0.4, batch_size=32, activation=sigmoid 
+[CV]  optimizer=Adam, neurons=64, init_mode=zero, filters=8, dropout_rate=0.4, batch_size=32, activation=sigmoid, score=0.015, total= 1.2min
+[CV] optimizer=Adam, neurons=64, init_mode=zero, filters=8, dropout_rate=0.4, batch_size=32, activation=sigmoid 
+[CV]  optimizer=Adam, neurons=64, init_mode=zero, filters=8, dropout_rate=0.4, batch_size=32, activation=sigmoid, score=0.000, total= 1.5min
+[CV] optimizer=RMSprop, neurons=128, init_mode=zero, filters=16, dropout_rate=0.2, batch_size=64, activation=linear 
+[CV]  optimizer=RMSprop, neurons=128, init_mode=zero, filters=16, dropout_rate=0.2, batch_size=64, activation=linear, score=0.015, total= 1.6min
+[CV] optimizer=RMSprop, neurons=128, init_mode=zero, filters=16, dropout_rate=0.2, batch_size=64, activation=linear 
+[CV]  optimizer=RMSprop, neurons=128, init_mode=zero, filters=16, dropout_rate=0.2, batch_size=64, activation=linear, score=0.000, total= 2.1min
+[CV] optimizer=Adadelta, neurons=128, init_mode=normal, filters=16, dropout_rate=0.6, batch_size=64, activation=relu 
+[CV]  optimizer=Adadelta, neurons=128, init_mode=normal, filters=16, dropout_rate=0.6, batch_size=64, activation=relu, score=0.048, total= 2.3min
+[CV] optimizer=Adadelta, neurons=128, init_mode=normal, filters=16, dropout_rate=0.6, batch_size=64, activation=relu 
+[CV]  optimizer=Adadelta, neurons=128, init_mode=normal, filters=16, dropout_rate=0.6, batch_size=64, activation=relu, score=0.967, total= 1.9min
+[CV] optimizer=Adagrad, neurons=64, init_mode=he_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softplus 
+[CV]  optimizer=Adagrad, neurons=64, init_mode=he_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softplus, score=0.015, total= 1.4min
+[CV] optimizer=Adagrad, neurons=64, init_mode=he_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softplus 
+[CV]  optimizer=Adagrad, neurons=64, init_mode=he_uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=softplus, score=0.000, total= 1.0min
+[CV] optimizer=Adadelta, neurons=64, init_mode=normal, filters=16, dropout_rate=0.2, batch_size=64, activation=sigmoid 
+[CV]  optimizer=Adadelta, neurons=64, init_mode=normal, filters=16, dropout_rate=0.2, batch_size=64, activation=sigmoid, score=0.015, total= 1.7min
+[CV] optimizer=Adadelta, neurons=64, init_mode=normal, filters=16, dropout_rate=0.2, batch_size=64, activation=sigmoid 
+[CV]  optimizer=Adadelta, neurons=64, init_mode=normal, filters=16, dropout_rate=0.2, batch_size=64, activation=sigmoid, score=0.000, total= 1.7min
+[CV] optimizer=Adam, neurons=128, init_mode=lecun_uniform, filters=16, dropout_rate=0.6, batch_size=64, activation=sigmoid 
+[CV]  optimizer=Adam, neurons=128, init_mode=lecun_uniform, filters=16, dropout_rate=0.6, batch_size=64, activation=sigmoid, score=0.043, total= 1.7min
+[CV] optimizer=Adam, neurons=128, init_mode=lecun_uniform, filters=16, dropout_rate=0.6, batch_size=64, activation=sigmoid 
+[CV]  optimizer=Adam, neurons=128, init_mode=lecun_uniform, filters=16, dropout_rate=0.6, batch_size=64, activation=sigmoid, score=0.958, total= 2.4min
+[CV] optimizer=SGD, neurons=64, init_mode=he_normal, filters=8, dropout_rate=0.4, batch_size=64, activation=tanh 
+[CV]  optimizer=SGD, neurons=64, init_mode=he_normal, filters=8, dropout_rate=0.4, batch_size=64, activation=tanh, score=0.015, total= 1.0min
+[CV] optimizer=SGD, neurons=64, init_mode=he_normal, filters=8, dropout_rate=0.4, batch_size=64, activation=tanh 
+[CV]  optimizer=SGD, neurons=64, init_mode=he_normal, filters=8, dropout_rate=0.4, batch_size=64, activation=tanh, score=0.000, total= 1.3min
+[CV] optimizer=Adam, neurons=64, init_mode=lecun_uniform, filters=16, dropout_rate=0.6, batch_size=64, activation=softplus 
+[CV]  optimizer=Adam, neurons=64, init_mode=lecun_uniform, filters=16, dropout_rate=0.6, batch_size=64, activation=softplus, score=0.085, total= 2.6min
+[CV] optimizer=Adam, neurons=64, init_mode=lecun_uniform, filters=16, dropout_rate=0.6, batch_size=64, activation=softplus 
+[CV]  optimizer=Adam, neurons=64, init_mode=lecun_uniform, filters=16, dropout_rate=0.6, batch_size=64, activation=softplus, score=0.949, total= 2.0min
+[CV] optimizer=SGD, neurons=32, init_mode=uniform, filters=16, dropout_rate=0.2, batch_size=64, activation=softmax 
+[CV]  optimizer=SGD, neurons=32, init_mode=uniform, filters=16, dropout_rate=0.2, batch_size=64, activation=softmax, score=0.015, total= 2.4min
+[CV] optimizer=SGD, neurons=32, init_mode=uniform, filters=16, dropout_rate=0.2, batch_size=64, activation=softmax 
+[CV]  optimizer=SGD, neurons=32, init_mode=uniform, filters=16, dropout_rate=0.2, batch_size=64, activation=softmax, score=0.000, total= 2.4min
+[CV] optimizer=Adam, neurons=128, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid 
+[CV]  optimizer=Adam, neurons=128, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid, score=0.069, total= 1.5min
+[CV] optimizer=Adam, neurons=128, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid 
+[CV]  optimizer=Adam, neurons=128, init_mode=lecun_uniform, filters=8, dropout_rate=0.4, batch_size=32, activation=hard_sigmoid, score=0.980, total= 2.7min
+[CV] optimizer=RMSprop, neurons=128, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=32, activation=softplus 
+[CV]  optimizer=RMSprop, neurons=128, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=32, activation=softplus, score=0.032, total= 2.0min
+[CV] optimizer=RMSprop, neurons=128, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=32, activation=softplus 
+[CV]  optimizer=RMSprop, neurons=128, init_mode=he_normal, filters=16, dropout_rate=0.6, batch_size=32, activation=softplus, score=0.000, total= 3.1min
+[CV] optimizer=Adagrad, neurons=128, init_mode=uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=linear 
+[CV]  optimizer=Adagrad, neurons=128, init_mode=uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=linear, score=0.036, total= 1.4min
+[CV] optimizer=Adagrad, neurons=128, init_mode=uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=linear 
+[CV]  optimizer=Adagrad, neurons=128, init_mode=uniform, filters=8, dropout_rate=0.4, batch_size=64, activation=linear, score=0.956, total= 1.1min
+Best Accuracy for 0.5312107356135288 using {'optimizer': 'Adam', 'neurons': 64, 'init_mode': 'he_uniform', 'filters': 16, 'dropout_rate': 0.4, 'batch_size': 32, 'activation': 'sigmoid'}
+    mean_fit_time       ...         rank_test_score
+0       54.211655       ...                      19
+1       38.513776       ...                      18
+2      118.590058       ...                      23
+3       83.064930       ...                       1
+4       78.940326       ...                       4
+5       81.083332       ...                       8
+6      120.911279       ...                      23
+7       48.263048       ...                      23
+8       58.532068       ...                      23
+9       42.166463       ...                      23
+10      81.112121       ...                       9
+11      87.136173       ...                      23
+12      42.813079       ...                      23
+13      52.557830       ...                      23
+14     105.313459       ...                      23
+15      52.606587       ...                       7
+16      89.938826       ...                      14
+17      54.696310       ...                      23
+18      96.315376       ...                      15
+19      53.463572       ...                      23
+20      64.843926       ...                      23
+21      65.753686       ...                      23
+22      91.965803       ...                      10
+23      95.324558       ...                       3
+24      64.699656       ...                      21
+25     128.243003       ...                       5
+26     103.843634       ...                      16
+27     103.706432       ...                      17
+28      73.179239       ...                      23
+29     103.115911       ...                      23
+30     112.676618       ...                      11
+31      54.453311       ...                      23
+32      94.189844       ...                      23
+33     116.370211       ...                      12
+34      61.952525       ...                      22
+35      96.677800       ...                       6
+36     131.495062       ...                      23
+37     115.279680       ...                       2
+38     139.700980       ...                      20
+39      57.818393       ...                      13
+
+[40 rows x 17 columns]
+ mean=0.01817, std=0.01817 using {'optimizer': 'Adadelta', 'neurons': 64, 'init_mode': 'lecun_uniform', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 32, 'activation': 'hard_sigmoid'}
+ mean=0.01887, std=0.01887 using {'optimizer': 'Adam', 'neurons': 32, 'init_mode': 'uniform', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 64, 'activation': 'tanh'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adamax', 'neurons': 64, 'init_mode': 'lecun_uniform', 'filters': 16, 'dropout_rate': 0.4, 'batch_size': 32, 'activation': 'softmax'}
+ mean=0.5312, std=0.4578 using {'optimizer': 'Adam', 'neurons': 64, 'init_mode': 'he_uniform', 'filters': 16, 'dropout_rate': 0.4, 'batch_size': 32, 'activation': 'sigmoid'}
+ mean=0.5225, std=0.4727 using {'optimizer': 'RMSprop', 'neurons': 64, 'init_mode': 'he_uniform', 'filters': 16, 'dropout_rate': 0.4, 'batch_size': 64, 'activation': 'softsign'}
+ mean=0.5155, std=0.4742 using {'optimizer': 'Adagrad', 'neurons': 32, 'init_mode': 'glorot_uniform', 'filters': 16, 'dropout_rate': 0.2, 'batch_size': 32, 'activation': 'softsign'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adagrad', 'neurons': 128, 'init_mode': 'zero', 'filters': 16, 'dropout_rate': 0.6, 'batch_size': 32, 'activation': 'softmax'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adam', 'neurons': 32, 'init_mode': 'he_uniform', 'filters': 8, 'dropout_rate': 0.6, 'batch_size': 64, 'activation': 'hard_sigmoid'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'SGD', 'neurons': 64, 'init_mode': 'lecun_uniform', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 64, 'activation': 'softmax'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adam', 'neurons': 32, 'init_mode': 'lecun_uniform', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 64, 'activation': 'sigmoid'}
+ mean=0.5152, std=0.4486 using {'optimizer': 'Nadam', 'neurons': 32, 'init_mode': 'uniform', 'filters': 16, 'dropout_rate': 0.4, 'batch_size': 64, 'activation': 'relu'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'SGD', 'neurons': 32, 'init_mode': 'zero', 'filters': 16, 'dropout_rate': 0.4, 'batch_size': 32, 'activation': 'softplus'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adam', 'neurons': 32, 'init_mode': 'glorot_normal', 'filters': 8, 'dropout_rate': 0.6, 'batch_size': 64, 'activation': 'sigmoid'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adadelta', 'neurons': 64, 'init_mode': 'zero', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 32, 'activation': 'softsign'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adamax', 'neurons': 64, 'init_mode': 'normal', 'filters': 16, 'dropout_rate': 0.4, 'batch_size': 32, 'activation': 'hard_sigmoid'}
+ mean=0.5164, std=0.4678 using {'optimizer': 'RMSprop', 'neurons': 32, 'init_mode': 'glorot_uniform', 'filters': 8, 'dropout_rate': 0.6, 'batch_size': 32, 'activation': 'linear'}
+ mean=0.0387, std=0.0387 using {'optimizer': 'RMSprop', 'neurons': 64, 'init_mode': 'normal', 'filters': 16, 'dropout_rate': 0.6, 'batch_size': 32, 'activation': 'sigmoid'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adam', 'neurons': 32, 'init_mode': 'glorot_normal', 'filters': 8, 'dropout_rate': 0.2, 'batch_size': 64, 'activation': 'hard_sigmoid'}
+ mean=0.037, std=0.037 using {'optimizer': 'Adamax', 'neurons': 32, 'init_mode': 'normal', 'filters': 16, 'dropout_rate': 0.2, 'batch_size': 64, 'activation': 'softplus'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'SGD', 'neurons': 64, 'init_mode': 'zero', 'filters': 8, 'dropout_rate': 0.2, 'batch_size': 32, 'activation': 'relu'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'SGD', 'neurons': 32, 'init_mode': 'glorot_normal', 'filters': 8, 'dropout_rate': 0.2, 'batch_size': 64, 'activation': 'softmax'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'SGD', 'neurons': 64, 'init_mode': 'glorot_uniform', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 64, 'activation': 'softmax'}
+ mean=0.5089, std=0.4681 using {'optimizer': 'Adagrad', 'neurons': 64, 'init_mode': 'he_normal', 'filters': 16, 'dropout_rate': 0.6, 'batch_size': 64, 'activation': 'softsign'}
+ mean=0.5225, std=0.4709 using {'optimizer': 'RMSprop', 'neurons': 128, 'init_mode': 'uniform', 'filters': 16, 'dropout_rate': 0.4, 'batch_size': 32, 'activation': 'tanh'}
+ mean=0.007543, std=0.007543 using {'optimizer': 'SGD', 'neurons': 64, 'init_mode': 'lecun_uniform', 'filters': 8, 'dropout_rate': 0.2, 'batch_size': 64, 'activation': 'relu'}
+ mean=0.5203, std=0.4515 using {'optimizer': 'RMSprop', 'neurons': 128, 'init_mode': 'glorot_uniform', 'filters': 16, 'dropout_rate': 0.4, 'batch_size': 64, 'activation': 'relu'}
+ mean=0.02329, std=0.02329 using {'optimizer': 'Adadelta', 'neurons': 64, 'init_mode': 'glorot_uniform', 'filters': 16, 'dropout_rate': 0.2, 'batch_size': 64, 'activation': 'hard_sigmoid'}
+ mean=0.02262, std=0.02262 using {'optimizer': 'Adadelta', 'neurons': 128, 'init_mode': 'he_normal', 'filters': 16, 'dropout_rate': 0.6, 'batch_size': 32, 'activation': 'sigmoid'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adam', 'neurons': 64, 'init_mode': 'zero', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 32, 'activation': 'sigmoid'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'RMSprop', 'neurons': 128, 'init_mode': 'zero', 'filters': 16, 'dropout_rate': 0.2, 'batch_size': 64, 'activation': 'linear'}
+ mean=0.5075, std=0.4593 using {'optimizer': 'Adadelta', 'neurons': 128, 'init_mode': 'normal', 'filters': 16, 'dropout_rate': 0.6, 'batch_size': 64, 'activation': 'relu'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adagrad', 'neurons': 64, 'init_mode': 'he_uniform', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 64, 'activation': 'softplus'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'Adadelta', 'neurons': 64, 'init_mode': 'normal', 'filters': 16, 'dropout_rate': 0.2, 'batch_size': 64, 'activation': 'sigmoid'}
+ mean=0.5004, std=0.4575 using {'optimizer': 'Adam', 'neurons': 128, 'init_mode': 'lecun_uniform', 'filters': 16, 'dropout_rate': 0.6, 'batch_size': 64, 'activation': 'sigmoid'}
+ mean=0.007421, std=0.007421 using {'optimizer': 'SGD', 'neurons': 64, 'init_mode': 'he_normal', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 64, 'activation': 'tanh'}
+ mean=0.5171, std=0.4318 using {'optimizer': 'Adam', 'neurons': 64, 'init_mode': 'lecun_uniform', 'filters': 16, 'dropout_rate': 0.6, 'batch_size': 64, 'activation': 'softplus'}
+ mean=0.007273, std=0.007273 using {'optimizer': 'SGD', 'neurons': 32, 'init_mode': 'uniform', 'filters': 16, 'dropout_rate': 0.2, 'batch_size': 64, 'activation': 'softmax'}
+ mean=0.5245, std=0.4557 using {'optimizer': 'Adam', 'neurons': 128, 'init_mode': 'lecun_uniform', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 32, 'activation': 'hard_sigmoid'}
+ mean=0.01616, std=0.01616 using {'optimizer': 'RMSprop', 'neurons': 128, 'init_mode': 'he_normal', 'filters': 16, 'dropout_rate': 0.6, 'batch_size': 32, 'activation': 'softplus'}
+ mean=0.4956, std=0.4599 using {'optimizer': 'Adagrad', 'neurons': 128, 'init_mode': 'uniform', 'filters': 8, 'dropout_rate': 0.4, 'batch_size': 64, 'activation': 'linear'}
+Accuracy: 0.9998034204835856
+F1 score: 0.9863013698630138
+Recall: 0.972972972972973
+Precision: 1.0
+Cohens Kappa : 0.9862023884758616
+ROC AUC Score: 0.9864864864864865
+
+ clasification report:
+               precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00      5050
+         1.0       1.00      0.97      0.99        37
+
+    accuracy                           1.00      5087
+   macro avg       1.00      0.99      0.99      5087
+weighted avg       1.00      1.00      1.00      5087
+
+
+ confussion matrix:
+ [[5050    0]
+ [   1   36]]
+Accuracy: 0.9947368421052631
+F1 score: 0.5714285714285715
+Recall: 0.4
+Precision: 1.0
+Cohens Kappa : 0.5692695214105794
+ROC AUC Score: 0.7
+
+ clasification report:
+               precision    recall  f1-score   support
+
+         0.0       0.99      1.00      1.00       565
+         1.0       1.00      0.40      0.57         5
+
+    accuracy                           0.99       570
+   macro avg       1.00      0.70      0.78       570
+weighted avg       0.99      0.99      0.99       570
+
+
+ confussion matrix:
+ [[565   0]
+ [  3   2]]
+Saved model to disk
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv1d_325 (Conv1D)          (None, 3187, 16)          368       
+_________________________________________________________________
+max_pooling1d_325 (MaxPoolin (None, 797, 16)           0         
+_________________________________________________________________
+batch_normalization_244 (Bat (None, 797, 16)           64        
+_________________________________________________________________
+conv1d_326 (Conv1D)          (None, 787, 32)           5664      
+_________________________________________________________________/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/conda/envs/rapids/lib/python3.6/site-packages/sklearn/metrics/classification.py:1437: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+[Parallel(n_jobs=1)]: Done  80 out of  80 | elapsed: 121.7min finished
+
+max_pooling1d_326 (MaxPoolin (None, 197, 32)           0         
+_________________________________________________________________
+batch_normalization_245 (Bat (None, 197, 32)           128       
+_________________________________________________________________
+conv1d_327 (Conv1D)          (None, 187, 64)           22592     
+_________________________________________________________________
+max_pooling1d_327 (MaxPoolin (None, 47, 64)            0         
+_________________________________________________________________
+batch_normalization_246 (Bat (None, 47, 64)            256       
+_________________________________________________________________
+conv1d_328 (Conv1D)          (None, 37, 128)           90240     
+_________________________________________________________________
+max_pooling1d_328 (MaxPoolin (None, 9, 128)            0         
+_________________________________________________________________
+flatten_82 (Flatten)         (None, 1152)              0         
+_________________________________________________________________
+dropout_163 (Dropout)        (None, 1152)              0         
+_________________________________________________________________
+dense_244 (Dense)            (None, 64)                73792     
+_________________________________________________________________
+dropout_164 (Dropout)        (None, 64)                0         
+_________________________________________________________________
+dense_245 (Dense)            (None, 64)                4160      
+_________________________________________________________________
+dense_246 (Dense)            (None, 1)                 65        
+=================================================================
+Total params: 197,329
+Trainable params: 197,105
+Non-trainable params: 224
+_________________________________________________________________
+None
+Accuracy: 0.9929824561403509
+F1 score: 0.33333333333333337
+Recall: 0.2
+Precision: 1.0
+Cohens Kappa : 0.33137829912023453
+ROC AUC Score: 0.6
+
+ clasification report:
+               precision    recall  f1-score   support
+
+         0.0       0.99      1.00      1.00       565
+         1.0       1.00      0.20      0.33         5
+
+    accuracy                           0.99       570
+   macro avg       1.00      0.60      0.66       570
+weighted avg       0.99      0.99      0.99       570
+
+
+ confussion matrix:
+ [[565   0]
+ [  4   1]]

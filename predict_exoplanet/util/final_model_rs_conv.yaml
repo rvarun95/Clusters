@@ -1,0 +1,324 @@
+backend: tensorflow
+class_name: Sequential
+config:
+  layers:
+  - class_name: Conv1D
+    config:
+      activation: softplus
+      activity_regularizer: null
+      batch_input_shape: !!python/tuple
+      - null
+      - 3197
+      - 2
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      data_format: channels_last
+      dilation_rate: !!python/tuple
+      - 1
+      dtype: float32
+      filters: 16
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config:
+          mean: 0.0
+          seed: null
+          stddev: 0.05
+      kernel_regularizer: null
+      kernel_size: !!python/tuple
+      - 11
+      name: conv1d_241
+      padding: valid
+      strides: !!python/tuple
+      - 1
+      trainable: true
+      use_bias: true
+  - class_name: MaxPooling1D
+    config:
+      data_format: channels_last
+      name: max_pooling1d_241
+      padding: valid
+      pool_size: !!python/tuple
+      - 2
+      strides: !!python/tuple
+      - 4
+      trainable: true
+  - class_name: BatchNormalization
+    config:
+      axis: -1
+      beta_constraint: null
+      beta_initializer:
+        class_name: Zeros
+        config: {}
+      beta_regularizer: null
+      center: true
+      epsilon: 0.001
+      gamma_constraint: null
+      gamma_initializer:
+        class_name: Ones
+        config: {}
+      gamma_regularizer: null
+      momentum: 0.99
+      moving_mean_initializer:
+        class_name: Zeros
+        config: {}
+      moving_variance_initializer:
+        class_name: Ones
+        config: {}
+      name: batch_normalization_181
+      scale: true
+      trainable: true
+  - class_name: Conv1D
+    config:
+      activation: softplus
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      data_format: channels_last
+      dilation_rate: !!python/tuple
+      - 1
+      filters: 32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config:
+          mean: 0.0
+          seed: null
+          stddev: 0.05
+      kernel_regularizer: null
+      kernel_size: !!python/tuple
+      - 11
+      name: conv1d_242
+      padding: valid
+      strides: !!python/tuple
+      - 1
+      trainable: true
+      use_bias: true
+  - class_name: MaxPooling1D
+    config:
+      data_format: channels_last
+      name: max_pooling1d_242
+      padding: valid
+      pool_size: !!python/tuple
+      - 2
+      strides: !!python/tuple
+      - 4
+      trainable: true
+  - class_name: BatchNormalization
+    config:
+      axis: -1
+      beta_constraint: null
+      beta_initializer:
+        class_name: Zeros
+        config: {}
+      beta_regularizer: null
+      center: true
+      epsilon: 0.001
+      gamma_constraint: null
+      gamma_initializer:
+        class_name: Ones
+        config: {}
+      gamma_regularizer: null
+      momentum: 0.99
+      moving_mean_initializer:
+        class_name: Zeros
+        config: {}
+      moving_variance_initializer:
+        class_name: Ones
+        config: {}
+      name: batch_normalization_182
+      scale: true
+      trainable: true
+  - class_name: Conv1D
+    config:
+      activation: softplus
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      data_format: channels_last
+      dilation_rate: !!python/tuple
+      - 1
+      filters: 64
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config:
+          mean: 0.0
+          seed: null
+          stddev: 0.05
+      kernel_regularizer: null
+      kernel_size: !!python/tuple
+      - 11
+      name: conv1d_243
+      padding: valid
+      strides: !!python/tuple
+      - 1
+      trainable: true
+      use_bias: true
+  - class_name: MaxPooling1D
+    config:
+      data_format: channels_last
+      name: max_pooling1d_243
+      padding: valid
+      pool_size: !!python/tuple
+      - 2
+      strides: !!python/tuple
+      - 4
+      trainable: true
+  - class_name: BatchNormalization
+    config:
+      axis: -1
+      beta_constraint: null
+      beta_initializer:
+        class_name: Zeros
+        config: {}
+      beta_regularizer: null
+      center: true
+      epsilon: 0.001
+      gamma_constraint: null
+      gamma_initializer:
+        class_name: Ones
+        config: {}
+      gamma_regularizer: null
+      momentum: 0.99
+      moving_mean_initializer:
+        class_name: Zeros
+        config: {}
+      moving_variance_initializer:
+        class_name: Ones
+        config: {}
+      name: batch_normalization_183
+      scale: true
+      trainable: true
+  - class_name: Conv1D
+    config:
+      activation: softplus
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      data_format: channels_last
+      dilation_rate: !!python/tuple
+      - 1
+      filters: 128
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config:
+          mean: 0.0
+          seed: null
+          stddev: 0.05
+      kernel_regularizer: null
+      kernel_size: !!python/tuple
+      - 11
+      name: conv1d_244
+      padding: valid
+      strides: !!python/tuple
+      - 1
+      trainable: true
+      use_bias: true
+  - class_name: MaxPooling1D
+    config:
+      data_format: channels_last
+      name: max_pooling1d_244
+      padding: valid
+      pool_size: !!python/tuple
+      - 2
+      strides: !!python/tuple
+      - 4
+      trainable: true
+  - class_name: Flatten
+    config:
+      data_format: channels_last
+      name: flatten_61
+      trainable: true
+  - class_name: Dropout
+    config:
+      name: dropout_121
+      noise_shape: null
+      rate: 0.2
+      seed: null
+      trainable: true
+  - class_name: Dense
+    config:
+      activation: softplus
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config:
+          mean: 0.0
+          seed: null
+          stddev: 0.05
+      kernel_regularizer: null
+      name: dense_181
+      trainable: true
+      units: 32
+      use_bias: true
+  - class_name: Dropout
+    config:
+      name: dropout_122
+      noise_shape: null
+      rate: 0.1
+      seed: null
+      trainable: true
+  - class_name: Dense
+    config:
+      activation: softplus
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config:
+          mean: 0.0
+          seed: null
+          stddev: 0.05
+      kernel_regularizer: null
+      name: dense_182
+      trainable: true
+      units: 32
+      use_bias: true
+  - class_name: Dense
+    config:
+      activation: sigmoid
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomNormal
+        config:
+          mean: 0.0
+          seed: null
+          stddev: 0.05
+      kernel_regularizer: null
+      name: dense_183
+      trainable: true
+      units: 1
+      use_bias: true
+  name: sequential_61
+keras_version: 2.2.4

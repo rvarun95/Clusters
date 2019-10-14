@@ -1,0 +1,5 @@
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "./train2.py", line 43, in <module>
+    prit("one")
+NameError: name 'prit' is not defined

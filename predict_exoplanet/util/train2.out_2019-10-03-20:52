@@ -1,0 +1,4 @@
+  File "./train2.py", line 2
+    os.environ[\u201cCUDA_VISIBLE_DEVICES\u201d] =""
+                                    ^
+SyntaxError: invalid character in identifier
