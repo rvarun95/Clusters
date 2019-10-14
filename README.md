@@ -22,6 +22,7 @@ python3 test.py
 
 ```
 
+	
 ## Contributors
 
  
@@ -35,7 +36,11 @@ python3 test.py
 
 [Rajan S ](https://github.com/rvarun95 "Rajan's github") 
 
+!INCLUDE https://github.com/rvarun95/Clusters/blob/master/project_structure.html
 
+!INCLUDE https://github.com/rvarun95/Clusters/blob/master/project_structure.png
+
+include::filename[https://github.com/rvarun95/Clusters/blob/master/project_structure.html]
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
